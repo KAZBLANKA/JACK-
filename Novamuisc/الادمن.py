@@ -7,7 +7,7 @@ from NovaMusic.helpers.handlers import skip_current_song, skip_item
 from NovaMusic.helpers.queues import QUEUE, clear_queue
 
 
-@Client.on_message(filters.command(["عدي"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["تخطي"], prefixes=f"{HNDLR}"))
 @authorized_users_only
 async def skip(client, m: Message):
     await m.delete()
@@ -41,7 +41,7 @@ async def skip(client, m: Message):
             await m.reply(OP)
 
 
-@Client.on_message(filters.command(["انهاء"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["وقف"], prefixes=f"{HNDLR}"))
 @authorized_users_only
 async def stop(client, m: Message):
     await m.delete()
@@ -57,7 +57,7 @@ async def stop(client, m: Message):
         await m.reply("**❌ لايوجد هناك اغنيه شغاله !**")
 
 
-@Client.on_message(filters.command(["وقف"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["اسكت"], prefixes=f"{HNDLR}"))
 @authorized_users_only
 async def pause(client, m: Message):
     await m.delete()
