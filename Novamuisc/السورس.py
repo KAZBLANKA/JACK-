@@ -103,7 +103,7 @@ async def help(client, m: Message):
 • {HNDLR}وقف
  - لإنهاء التشغيل
                                    ​​​​​​​​​​​  ​​​​​​​​​​​​​​​​​​​​​​​​​​✫
-By : @UU_and_rold
+DEV : @U_Androld
                                    ​​​​​​​​​​​  ​​​​​​​​​​​​​​​​​​​​​​​​​​✫
 """
     await m.reply(HEPZ)
