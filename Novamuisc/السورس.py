@@ -126,6 +126,6 @@ async def repo(client, martin: Message):
                                    ​​​​​​​​​​​  ​​​​​​​​​​​​​​​​​​​​​​​​​​✫                                   
 """
     await martin.reply_photo(
-        photo=f"https://telegra.ph/file/ad4ede69d64e5640abd7d.jpg",
+        photo=f"https://telegra.ph/file/6b94cd84113f2de71d70e.jpg",
         caption=REPZ,
     )
