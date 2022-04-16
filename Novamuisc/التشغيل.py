@@ -128,7 +128,7 @@ async def play(client, m: Message):
     if replied:
         if replied.audio or replied.voice:
             await m.delete()
-            huehue = await replied.reply("**ويـت ي قـلب 🌿💕**")
+            huehue = await replied.reply("**ويـت ي قـلب 🙂💞**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -145,10 +145,10 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
                     caption=f"""
-                    **تم تشغيل الاغنيه** 🌿💕
-**الاغـنـيه** 🌿💕 : [{songname}]({link})
-**ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
-**طـلب مـن : {m.from_user.mention}** 🌿💕
+                    **تم تشغيل الاغنيه** 🙂💞
+**الاغـنـيه** 🙂💞 : [{songname}]({link})
+**ايدي الـمجـمـوعه** 💛💞 : {chat_id}
+**طـلب مـن : {m.from_user.mention}** 🙂💞
 """,
                 )
             else:
@@ -165,19 +165,19 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
                     caption=f"""
-                    **تم تشغيل الاغنيه** 🌿💕
-**الاغـنـيه** 🌿💕 : [{songname}]({link})
-**ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
-**طـلب مـن : {m.from_user.mention}** 🌿💕
+                    **تم تشغيل الاغنيه** 🙂💞
+**الاغـنـيه** 🙂💞 : [{songname}]({link})
+**ايدي الـمجـمـوعه** 🙂💞 : {chat_id}
+**طـلب مـن : {m.from_user.mention}** 🙂💞
 """,
                 )
 
     else:
         if len(m.command) < 2:
-            await m.reply("اكـتب اسـم الاغـنيـه او هـات ريـب عـلي اغـنيه او لـينك يـوتـيوب 🌿💕")
+            await m.reply("اكـتب اسـم الاغـنيـه او هـات ريـب عـلي اغـنيه او لـينك يـوتـيوب 🙂💞")
         else:
             await m.delete()
-            huehue = await m.reply("**ويـت ي قـلب 🌿💕**")
+            huehue = await m.reply("**ويـت ي قـلب 🙂💞**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -197,10 +197,10 @@ async def play(client, m: Message):
                         await m.reply_photo(
                             photo=f"{thumbnail}",
                             caption=f"""
-**الاغـنـيه** 🌿💕 : [{songname}]({link})
-**ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
-**المـده** 🌿💕 : {duration}
-**طـلب مـن : {m.from_user.mention}** 🌿💕
+**الاغـنـيه** 🙂💞 : [{songname}]({link})
+**ايدي الـمجـمـوعه** 🙂💞 : {chat_id}
+**المـده** 🙂💞 : {duration}
+**طـلب مـن : {m.from_user.mention}** 🙂💞
 """,
                         )
                     else:
@@ -218,11 +218,11 @@ async def play(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{thumbnail}",
                                 caption=f"""
-**تم تشغيل الاغنيه** 🌿💕
-**الاغـنـيه** 🌿💕 : [{songname}]({link})
-**ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
-**المـده** 🌿💕 : {duration}
-**طـلب مـن : {m.from_user.mention}** 🌿💕
+**تم تشغيل الاغنيه** 🙂💞
+**الاغـنـيه** 🙂💞 : [{songname}]({link})
+**ايدي الـمجـمـوعه** 🙂💞 : {chat_id}
+**المـده** 🙂💞 : {duration}
+**طـلب مـن : {m.from_user.mention}** 🙂💞
 """,
                             )
                         except Exception as ep:
@@ -237,7 +237,7 @@ async def vplay(client, m: Message):
     if replied:
         if replied.video or replied.document:
             await m.delete()
-            huehue = await replied.reply("**ويـت ي قـلب 🌿💕**")
+            huehue = await replied.reply("**ويـت ي قـلب 🙂💞**")
             dl = await replied.download()
             link = replied.link
             if len(m.command) < 2:
@@ -265,9 +265,9 @@ async def vplay(client, m: Message):
                     photo="https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
                     caption=f"""
 #⃣ Video Di Antrian Ke {pos}
-**الاغـنـيه** 🌿💕 : [{songname}]({link})
-**ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
-**طـلب مـن : {m.from_user.mention}** 🌿💕
+**الاغـنـيه** 🙂💞 : [{songname}]({link})
+**ايدي الـمجـمـوعه** 🙂💞 : {chat_id}
+**طـلب مـن : {m.from_user.mention}** 🙂💞
 """,
                 )
             else:
@@ -288,20 +288,20 @@ async def vplay(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
                     caption=f"""
-**الاغـنـيه** 🌿💕 : [{songname}]({link})
-**ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
-**طـلب مـن : {m.from_user.mention}** 🌿💕
+**الاغـنـيه** 🙂💞 : [{songname}]({link})
+**ايدي الـمجـمـوعه** 🙂💞 : {chat_id}
+**طـلب مـن : {m.from_user.mention}** 🙂💞
 """,
                 )
 
     else:
         if len(m.command) < 2:
             await m.reply(
-                "**اكـتب اسـم الـفـيـد او هـات ريـب عـلي فـيـد او لـينك يـوتـيوب 🌿💕**"
+                "**اكـتب اسـم الـفـيـد او هـات ريـب عـلي فـيـد او لـينك يـوتـيوب 🙂💞**"
             )
         else:
             await m.delete()
-            huehue = await m.reply("**ويـت ي قـلب 🌿💕**")
+            huehue = await m.reply("**ويـت ي قـلب 🙂💞**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
@@ -326,10 +326,10 @@ async def vplay(client, m: Message):
                         await m.reply_photo(
                             photo=f"{thumbnail}",
                             caption=f"""
-**الاغـنـيه** 🌿💕 : [{songname}]({link})
-**ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
-**المـده** 🌿💕 : {duration}
-**طـلب مـن : {m.from_user.mention}** 🌿💕
+**الاغـنـيه** 🙂💞 : [{songname}]({link})
+**ايدي الـمجـمـوعه** 🙂💞 : {chat_id}
+**المـده** 🙂💞 : {duration}
+**طـلب مـن : {m.from_user.mention}** 🙂💞
 """,
                         )
                     else:
@@ -345,10 +345,10 @@ async def vplay(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{thumbnail}",
                                 caption=f"""
-**الاغـنـيه** 🌿💕 : [{songname}]({link})
-**ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
-**المـده** 🌿💕 : {duration}
-**طـلب مـن : {m.from_user.mention}** 🌿💕
+**الاغـنـيه** 🙂💞 : [{songname}]({link})
+**ايدي الـمجـمـوعه** 🙂💞 : {chat_id}
+**المـده** 🙂💞 : {duration}
+**طـلب مـن : {m.from_user.mention}** 🙂💞
 """,
                             )
                         except Exception as ep:
@@ -394,10 +394,10 @@ async def playfrom(client, m: Message):
                     await m.reply_photo(
                         photo="https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
                         caption=f"""
-**ابدأ تشغيل الأغاني من** 🌿💕 {chat}
-الاغـنـيه 🌿💕 : [{songname}]({link})
-ايدي الـمجـمـوعه 🌿💕 : {chat_id}
-طـلب مـن : {m.from_user.mention} 🌿💕
+**ابدأ تشغيل الأغاني من** 🙂💞 {chat}
+الاغـنـيه 🙂💞 : [{songname}]({link})
+ايدي الـمجـمـوعه 🙂💞 : {chat_id}
+طـلب مـن : {m.from_user.mention} 🙂💞
 """,                  
          )
             await hmm.delete()
